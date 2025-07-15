@@ -10,10 +10,10 @@ export default function CtaGeneratorPage() {
         <section className="container py-12 md:py-24">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-              AI-Powered CTA Generator
+              Generador de CTA con IA
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Describe your target audience, and our AI will craft compelling call-to-action texts tailored to them. Find the perfect words to boost your engagement.
+              Describe tu público objetivo y nuestra IA creará textos de llamado a la acción convincentes y adaptados a ellos. Encuentra las palabras perfectas para aumentar tu interacción.
             </p>
           </div>
           <div className="mx-auto mt-12 max-w-2xl">

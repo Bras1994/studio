@@ -15,8 +15,8 @@ import { Loader2, Copy } from "lucide-react";
 const formSchema = z.object({
   targetUserDescription: z
     .string()
-    .min(20, { message: "Please provide a more detailed description (at least 20 characters)." })
-    .max(500, { message: "Description cannot exceed 500 characters." }),
+    .min(20, { message: "Por favor, proporciona una descripción más detallada (al menos 20 caracteres)." })
+    .max(500, { message: "La descripción no puede exceder los 500 caracteres." }),
 });
 
 export function CtaGeneratorForm() {
@@ -40,11 +40,11 @@ export function CtaGeneratorForm() {
         setGeneratedCtas(result.callToActions);
       }
     } catch (error) {
-      console.error("Error generating CTAs:", error);
+      console.error("Error al generar CTAs:", error);
       toast({
         variant: "destructive",
-        title: "An error occurred",
-        description: "Failed to generate CTAs. Please try again.",
+        title: "Ocurrió un error",
+        description: "No se pudieron generar los CTAs. Por favor, inténtalo de nuevo.",
       });
     } finally {
       setIsLoading(false);
@@ -54,8 +54,8 @@ export function CtaGeneratorForm() {
   const handleCopy = (text: string) => {
     navigator.clipboard.writeText(text);
     toast({
-      title: "Copied to clipboard!",
-      description: "The CTA text has been copied.",
+      title: "¡Copiado al portapapeles!",
+      description: "El texto del CTA ha sido copiado.",
     });
   };
 
@@ -69,10 +69,10 @@ export function CtaGeneratorForm() {
               name="targetUserDescription"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-lg">Target User Description</FormLabel>
+                  <FormLabel className="text-lg">Descripción del Usuario Objetivo</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="e.g., 'Ambitious female entrepreneurs in their early 30s, who are tech-savvy but feel overwhelmed by marketing tools and just want to launch their service-based business.'"
+                      placeholder="Ej: 'Emprendedoras ambiciosas de unos 30 años, expertas en tecnología pero abrumadas por las herramientas de marketing, que solo quieren lanzar su negocio de servicios.'"
                       rows={5}
                       {...field}
                     />
@@ -85,10 +85,10 @@ export function CtaGeneratorForm() {
               {isLoading ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Generating...
+                  Generando...
                 </>
               ) : (
-                "Generate CTAs"
+                "Generar CTAs"
               )}
             </Button>
           </form>
@@ -96,7 +96,7 @@ export function CtaGeneratorForm() {
 
         {generatedCtas.length > 0 && (
           <div className="mt-10 space-y-4">
-            <h3 className="text-2xl font-headline font-bold">Generated CTAs</h3>
+            <h3 className="text-2xl font-headline font-bold">CTAs Generados</h3>
             <div className="space-y-4">
               {generatedCtas.map((cta, index) => (
                 <Card key={index} className="bg-accent">
@@ -104,7 +104,7 @@ export function CtaGeneratorForm() {
                     <p className="text-accent-foreground">{cta}</p>
                     <Button variant="ghost" size="icon" onClick={() => handleCopy(cta)}>
                       <Copy className="h-4 w-4" />
-                      <span className="sr-only">Copy</span>
+                      <span className="sr-only">Copiar</span>
                     </Button>
                   </CardContent>
                 </Card>

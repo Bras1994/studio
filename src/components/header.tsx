@@ -12,7 +12,7 @@ export function Header() {
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
           <Button asChild variant="ghost">
-            <Link href="/cta-generator">CTA Generator</Link>
+            <Link href="/cta-generator">Generador de CTA</Link>
           </Button>
         </div>
       </div>
