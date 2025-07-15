@@ -74,7 +74,7 @@ export default function Home() {
         <section id="about" className="bg-accent py-20 md:py-24">
           <div className="container grid md:grid-cols-2 gap-12 items-center">
             <Image
-              src="https://i.imgur.com/8aL1G8c.png"
+              src="https://i.imgur.com/Oe3EIBL.jpeg"
               alt="Agustina Santos"
               width={500}
               height={500}
