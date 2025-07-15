@@ -61,7 +61,7 @@ export default function Home() {
         </section>
 
         {/* About Me Section */}
-        <section id="about" className="bg-accent py-20 md:py-24 text-primary-foreground">
+        <section id="about" className="bg-primary text-primary-foreground py-20 md:py-24">
           <div className="container grid md:grid-cols-2 gap-12 items-center">
             <Image
               src="https://i.imgur.com/2todKOR.png"
@@ -129,7 +129,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            {/* Consultoria y Diseño */}
+            {/* Consultoria */}
             <div className="space-y-8 flex flex-col">
               <Card className="flex flex-col flex-grow">
                 <CardHeader>
@@ -150,27 +150,6 @@ export default function Home() {
                         <a href="https://wa.me/542236951465?text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20consultor%C3%ADa%20externa%20en%20marketing%20digital." target="_blank" rel="noopener noreferrer">👉 Ver cómo trabajamos</a>
                       </Button>
                    </div>
-                </CardContent>
-              </Card>
-
-              <Card className="flex flex-col flex-grow">
-                <CardHeader>
-                  <CardTitle className="text-2xl font-headline">DISEÑO WEB EN WORDPRESS</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4 flex-grow">
-                    <p className="text-muted-foreground">🌐 Webs profesionales para negocios y emprendedoras</p>
-                     <ul className="list-disc list-inside text-muted-foreground ml-4">
-                      <li>Webs institucionales (nosotros, servicios, contacto, etc.)</li>
-                      <li>Tiendas online</li>
-                      <li>Landing pages</li>
-                      <li>Integración con WhatsApp, redes, formularios</li>
-                      <li>Diseño responsive + autogestionable</li>
-                      <li>Opcional: mantenimiento mensual</li>
-                    </ul>
-                    <Button className="mt-4" asChild>
-                      <a href="https://wa.me/542236951465?text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20dise%C3%B1o%20web." target="_blank" rel="noopener noreferrer">👉 Quiero una web</a>
-                    </Button>
-                    <p className="text-sm text-muted-foreground italic pt-2">PD: Esta web que estás viendo también la hice yo 😌</p>
                 </CardContent>
               </Card>
             </div>
@@ -213,7 +192,7 @@ export default function Home() {
         </section>
         
         {/* Free Resources Section */}
-        <section id="free-resources" className="bg-accent py-20 md:py-24 text-primary-foreground">
+        <section id="free-resources" className="bg-primary py-20 md:py-24 text-primary-foreground">
             <div className="container">
                 <div className="text-center max-w-3xl mx-auto">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold text-[#EDEDED]">
@@ -281,7 +260,7 @@ export default function Home() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="bg-accent py-20 md:py-24">
+        <section className="bg-primary py-20 md:py-24">
           <div className="container text-center max-w-3xl mx-auto text-primary-foreground">
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-[#EDEDED]">
               ¿No sabés por dónde empezar?
@@ -298,27 +277,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* Contact Section */}
-        <section id="contact" className="py-20 md:py-24">
-            <div className="container text-center max-w-3xl mx-auto">
-                 <div className="flex justify-center items-center gap-6 flex-wrap">
-                    <a href="mailto:agustinasantos.tech@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
-                        <Mail className="h-5 w-5"/> agustinasantos.tech@gmail.com
-                    </a>
-                     <a href="https://wa.me/542236951465" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
-                        <MessageSquare className="h-5 w-5"/> WhatsApp directo
-                    </a>
-                     <a href="https://instagram.com/agus.tech" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
-                        <Instagram className="h-5 w-5"/> @agus.tech
-                    </a>
-                     <a href="https://www.linkedin.com/in/santosagustina/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
-                        <Linkedin className="h-5 w-5"/> LinkedIn
-                    </a>
-                 </div>
-            </div>
-        </section>
-
       </main>
       <Footer />
     </div>
