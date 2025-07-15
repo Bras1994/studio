@@ -1,60 +1,59 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { CheckCircle2, Calendar, MessageCircle } from "lucide-react";
+import { Check, User, Building, Globe, Mail, MessageSquare, Linkedin, Calendar, Download, PlayCircle, Instagram } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-
-const benefits = [
-  "Gana una claridad cristalina sobre la dirección de tu negocio.",
-  "Aumenta tu energía y motivación para tomar acciones consistentes.",
-  "Logra un enfoque láser en lo que realmente importa para el crecimiento.",
-  "Desarrolla un plan estratégico que se alinee con tu visión.",
-  "Supera el agobio con una guía práctica y paso a paso."
-];
+import Link from "next/link";
 
 const testimonials = [
   {
-    quote: "La guía de Agustina fue un antes y un después. Pasé de sentirme completamente perdida a tener una hoja de ruta clara para mi negocio. ¡No puedo agradecerle lo suficiente!",
-    name: "Laura P.",
-    title: "Fundadora, Creative Minds Co."
+    quote: "Agus me ayudó a organizar toda mi comunicación, ¡hoy siento que sé lo que hago en redes!",
+    name: "Cecilia Oreglia",
+    title: ""
   },
   {
-    quote: "La mentoría 'Baja a Tierra' me ayudó a eliminar el ruido y concentrarme en lo importante. Mi productividad se ha disparado y me siento más en control que nunca.",
-    name: "Sofía R.",
-    title: "Emprendedora de E-commerce"
+    quote: "No solo me hizo la web, sino que me acompañó para entender cómo usarla y cómo comunicar mejor.",
+    name: "TuttoLimpio",
+    title: ""
   },
-  {
-    quote: "Al principio era escéptica, pero las ideas estratégicas de Agustina son oro puro. Me ayudó a identificar mis prioridades clave y me dio la confianza para perseguirlas.",
-    name: "Camila G.",
-    title: "Proveedora de Servicios Digitales"
-  }
 ];
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
+
+      {/* Top Banner */}
+      <div className="bg-primary text-primary-foreground text-center py-2 px-4 text-sm">
+        🎁 ¡Gratis! Ebook para destrabar tu creatividad emprendedora. 
+        <a href="#" className="font-bold underline ml-2">Descargalo acá</a>
+      </div>
+
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="container grid lg:grid-cols-2 gap-10 items-center py-20 md:py-32 animate-in fade-in duration-1000">
+        <section className="container grid lg:grid-cols-2 gap-10 items-center py-20 md:py-32">
           <div className="space-y-6">
             <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
-              Deja de Ahogarte en Ideas. Empieza a Construir Tu Sueño.
+              Profesionalizá tu comunicación digital sin volverte loca.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
-              ¿Te sientes abrumada por la información interminable? El servicio <span className="font-bold text-primary">Baja a Tierra</span> ayuda a mujeres emprendedoras como tú a encontrar claridad y construir un negocio que prospere.
+              Mentorías, estrategia y páginas web para emprendedoras y negocios que quieren crecer en digital, bajado a tierra y con acompañamiento real.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" asChild>
-                <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
-                  <Calendar className="mr-2 h-5 w-5" /> Agenda una Llamada Gratis
+                <a href="#services">
+                  <User className="mr-2 h-5 w-5" /> 👩‍💻 Quiero una mentoría
                 </a>
               </Button>
               <Button size="lg" variant="secondary" asChild>
-                <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="mr-2 h-5 w-5" /> Chatea por WhatsApp
+                <a href="#services">
+                  <Building className="mr-2 h-5 w-5" /> 🏢 Necesito estrategia para mi negocio
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <a href="#services">
+                  <Globe className="mr-2 h-5 w-5" /> 🌐 Estoy buscando una web
                 </a>
               </Button>
             </div>
@@ -62,125 +61,263 @@ export default function Home() {
           <div className="relative hidden lg:block">
             <Image
               src="https://placehold.co/600x400.png"
-              alt="Mujer sintiéndose clara y enfocada"
+              alt="Comunicación digital profesional"
               width={600}
               height={400}
               className="rounded-xl shadow-2xl"
-              data-ai-hint="abstract pastel shapes"
+              data-ai-hint="woman working laptop"
             />
           </div>
         </section>
 
-        {/* Empathy Section */}
-        <section className="bg-accent py-20 md:py-24">
-          <div className="container text-center max-w-3xl mx-auto">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">
-              ¿Te Sientes Desorganizada y Estancada?
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              No estás sola. Muchas emprendedoras brillantes se quedan atascadas en un ciclo de sobrecarga de información y parálisis por análisis. Es hora de liberarse y obtener un plan claro y accionable que haga avanzar tu negocio.
-            </p>
-          </div>
-        </section>
-
-        {/* Benefits Section */}
-        <section className="container py-20 md:py-24">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">
-              Qué Obtendrás con 'Baja a Tierra'
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Nuestra mentoría está diseñada para darte la claridad, energía y enfoque que necesitas para tener éxito.
-            </p>
-          </div>
-          <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => (
-              <Card key={index} className="p-2 bg-transparent border-0 shadow-none">
-                <CardContent className="flex items-start gap-4 p-4">
-                  <CheckCircle2 className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                  <p className="font-body text-base text-muted-foreground">{benefit}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-
-        {/* About Agustina Section */}
-        <section className="bg-accent py-20 md:py-24">
+        {/* About Me Section */}
+        <section id="about" className="bg-accent py-20 md:py-24">
           <div className="container grid md:grid-cols-2 gap-12 items-center">
             <Image
               src="https://placehold.co/500x500.png"
-              alt="Agustina, Fundadora de Clarity Launchpad"
+              alt="Agustina Santos"
               width={500}
               height={500}
               className="rounded-full aspect-square object-cover mx-auto shadow-xl"
               data-ai-hint="professional woman portrait"
             />
             <div className="space-y-4">
-              <h2 className="font-headline text-3xl md:text-4xl font-bold">Sobre Agustina</h2>
+              <h2 className="font-headline text-3xl md:text-4xl font-bold">Soy Agustina Santos. Analizo, ordeno y acciono.</h2>
               <p className="text-lg text-muted-foreground">
-                Con más de una década de experiencia en marketing digital y apoyo estratégico, he ayudado a innumerables emprendedoras a navegar las complejidades de construir un negocio en línea exitoso.
+                Trabajo con emprendedores y marcas que necesitan claridad, estructura y una estrategia realista que puedan sostener.
               </p>
               <p className="text-lg text-muted-foreground">
-                Mi pasión es ayudarte a eliminar el desorden, alinear tus acciones con tu visión y construir un negocio que no solo sea rentable, sino también profundamente gratificante. Hagamos tu sueño realidad, juntas.
+                Mentora, analista y diseñadora web. Lo mío es bajarte todo a tierra.
               </p>
             </div>
           </div>
         </section>
 
+        {/* Services Section */}
+        <section id="services" className="container py-20 md:py-24">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">
+              Servicios
+            </h2>
+          </div>
+          <div className="mt-12 grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Mentorias */}
+            <Card className="flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-2xl font-headline">MENTORÍAS PARA EMPRENDEDORAS</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6 flex-grow">
+                <div>
+                  <h3 className="text-xl font-bold">✨ “Bajado a Tierra” – Mentoría express</h3>
+                  <p className="text-muted-foreground mt-2">Una sesión única de 90 minutos para emprendedoras que necesitan claridad YA. Ordenamos ideas, definimos prioridades y te llevás una hoja de ruta práctica.</p>
+                  <p className="mt-2 font-semibold">🔹 Ideal si:</p>
+                  <ul className="list-disc list-inside text-muted-foreground ml-4">
+                    <li>Tenés mil ideas pero nada claro</li>
+                    <li>Sentís que hacés de todo pero sin estrategia</li>
+                    <li>Estás trabada para dar el siguiente paso</li>
+                  </ul>
+                  <Button className="mt-4" asChild><a href="#">👉 Quiero una mentoría</a></Button>
+                </div>
+                <hr/>
+                <div>
+                  <h3 className="text-xl font-bold">🧰 “Botiquín de Marketing” – Mentoría extendida</h3>
+                  <p className="text-muted-foreground mt-2">Acompañamiento de 6 semanas para ayudarte a construir (o reconstruir) tu presencia digital desde la base: identidad, comunicación, contenido, herramientas.</p>
+                  <ul className="list-none space-y-1 mt-2 text-muted-foreground">
+                    <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Análisis de tu perfil actual</li>
+                    <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Marca personal y público objetivo</li>
+                    <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Estrategia de contenido</li>
+                    <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Edición simple (Canva y CapCut)</li>
+                    <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Opcional: Web o tienda online</li>
+                  </ul>
+                   <Button className="mt-4" asChild><a href="#">👉 Más info del botiquín</a></Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Consultoria y Diseño */}
+            <div className="space-y-8 flex flex-col">
+              <Card className="flex flex-col flex-grow">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-headline">CONSULTORÍA PARA NEGOCIOS / PYMES</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6 flex-grow">
+                   <div>
+                      <h3 className="text-xl font-bold">🧠 Consultora externa en marketing digital</h3>
+                      <p className="text-muted-foreground mt-2">Servicio pensado para marcas, pymes o emprendimientos más consolidados que necesitan una mirada externa profesional, sin fórmulas vacías.</p>
+                      <p className="mt-2 font-semibold">3 etapas de trabajo:</p>
+                      <ol className="list-decimal list-inside text-muted-foreground ml-4">
+                        <li>Brief y diagnóstico del negocio</li>
+                        <li>Auditoría de redes y comunicación</li>
+                        <li>Plan estratégico + calendario de contenidos</li>
+                      </ol>
+                       <p className="text-muted-foreground mt-2">Podés sumar seguimiento mensual o usarlo como base para que lo implemente tu equipo.</p>
+                      <Button className="mt-4" asChild><a href="#">👉 Ver cómo trabajamos</a></Button>
+                   </div>
+                </CardContent>
+              </Card>
+
+              <Card className="flex flex-col flex-grow">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-headline">DISEÑO WEB EN WORDPRESS</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 flex-grow">
+                    <p className="text-muted-foreground">🌐 Webs profesionales para negocios y emprendedoras</p>
+                     <ul className="list-disc list-inside text-muted-foreground ml-4">
+                      <li>Webs institucionales (nosotros, servicios, contacto, etc.)</li>
+                      <li>Tiendas online</li>
+                      <li>Landing pages</li>
+                      <li>Integración con WhatsApp, redes, formularios</li>
+                      <li>Diseño responsive + autogestionable</li>
+                      <li>Opcional: mantenimiento mensual</li>
+                    </ul>
+                    <Button className="mt-4" asChild><a href="#">👉 Quiero una web</a></Button>
+                    <p className="text-sm text-muted-foreground italic pt-2">PD: Esta web que estás viendo también la hice yo 😌</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+            
+          {/* Taller para equipos */}
+          <div className="mt-8">
+            <Card>
+                <CardHeader>
+                    <CardTitle className="text-2xl font-headline">🟠 TALLER PARA EQUIPOS</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <h3 className="text-xl font-bold">🎓 Marca personal con propósito – Formación para equipos</h3>
+                    <p className="text-muted-foreground mt-2">Un taller pensado para que los miembros de tu equipo representen a la marca desde lo humano, con autenticidad y profesionalismo. Ideal para áreas comerciales, marketing, liderazgo o RRHH.</p>
+                    <div className="grid md:grid-cols-2 gap-6 mt-4">
+                        <div>
+                            <p className="font-semibold">Incluye:</p>
+                            <ul className="list-none space-y-1 mt-2 text-muted-foreground">
+                                <li className="flex items-start"><Check className="h-4 w-4 mr-2 mt-1 text-primary flex-shrink-0"/>Dinámicas para descubrir fortalezas y estilo personal</li>
+                                <li className="flex items-start"><Check className="h-4 w-4 mr-2 mt-1 text-primary flex-shrink-0"/>Guía para comunicar con coherencia en redes sociales</li>
+                                <li className="flex items-start"><Check className="h-4 w-4 mr-2 mt-1 text-primary flex-shrink-0"/>Ejercicios grupales y recursos editables</li>
+                                <li className="flex items-start"><Check className="h-4 w-4 mr-2 mt-1 text-primary flex-shrink-0"/>Revisión de perfiles + certificado de participación</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p className="font-semibold">🔹 Ideal si:</p>
+                             <ul className="list-disc list-inside text-muted-foreground ml-4 mt-2">
+                                <li>Tu equipo no sabe cómo “mostrarse” sin parecer forzado</li>
+                                <li>Querés potenciar la comunicación interna y externa</li>
+                                <li>Buscás que cada persona represente a tu marca desde su valor personal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <Button className="mt-4" asChild><a href="#">👉 Quiero este taller para mi equipo</a></Button>
+                </CardContent>
+            </Card>
+          </div>
+        </section>
+        
+        {/* Free Resources Section */}
+        <section id="free-resources" className="bg-accent py-20 md:py-24">
+            <div className="container">
+                <div className="text-center max-w-3xl mx-auto">
+                    <h2 className="font-headline text-3xl md:text-4xl font-bold">
+                        🎁 Recursos Gratuitos
+                    </h2>
+                </div>
+                <div className="mt-12 grid md:grid-cols-2 gap-8">
+                    <Card>
+                        <CardHeader>
+                            <CardTitle className="text-xl font-headline">📘 Ebook – Activá tu creatividad emprendedora</CardTitle>
+                        </CardHeader>
+                        <CardContent className="space-y-4">
+                            <p className="text-muted-foreground">Una guía práctica para dejar de sentirte bloqueada, destrabar ideas y volver a conectar con tu contenido.</p>
+                            <p className="text-foreground">💡 Ideal si estás empezando o perdiste el entusiasmo.</p>
+                            <Button asChild>
+                                <a href="#">
+                                    <Download className="mr-2 h-4 w-4" />
+                                    Descargalo gratis
+                                </a>
+                            </Button>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <CardHeader>
+                            <CardTitle className="text-xl font-headline">🎥 Clase gratuita – Creá tu Linktree paso a paso</CardTitle>
+                        </CardHeader>
+                        <CardContent className="space-y-4">
+                            <p className="text-muted-foreground">Una guía simple para tener tu perfil más profesional, sin depender de nadie.</p>
+                            <p className="text-foreground">🌱 Ideal para emprendedoras que están empezando a ordenarse digitalmente.</p>
+                            <Button asChild>
+                                <a href="#">
+                                    <PlayCircle className="mr-2 h-4 w-4" />
+                                    Accedé a la clase
+                                </a>
+                            </Button>
+                        </CardContent>
+                    </Card>
+                </div>
+            </div>
+        </section>
+
+
         {/* Testimonials Section */}
         <section className="container py-20 md:py-24">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
-              Lo Que Dicen Nuestras Clientas
+              Testimonios
             </h2>
           </div>
-          <Carousel className="mt-12 w-full max-w-4xl mx-auto" opts={{ loop: true }}>
-            <CarouselContent>
-              {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1">
-                    <Card className="h-full">
-                      <CardContent className="p-6 flex flex-col justify-between h-full">
-                        <p className="text-muted-foreground mb-4">"{testimonial.quote}"</p>
-                        <div className="text-right">
-                          <p className="font-bold font-headline text-foreground">{testimonial.name}</p>
-                          <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+          <div className="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {testimonials.map((testimonial, index) => (
+                <Card key={index} className="h-full">
+                    <CardContent className="p-6 flex flex-col justify-center items-center text-center h-full">
+                    <p className="text-muted-foreground text-lg">"{testimonial.quote}"</p>
+                    <div className="mt-4">
+                        <p className="font-bold font-headline text-foreground">– {testimonial.name}</p>
+                    </div>
+                    </CardContent>
+                </Card>
+            ))}
+          </div>
+           <div className="text-center mt-8">
+             <Button variant="link" asChild><a href="#">Ver más testimonios</a></Button>
+           </div>
         </section>
 
         {/* Final CTA Section */}
         <section className="bg-accent py-20 md:py-24">
           <div className="container text-center max-w-3xl mx-auto">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
-              ¿Lista para Encontrar tu Enfoque?
+              ¿No sabés por dónde empezar?
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Da el primer paso hacia la claridad y la acción impactante. Tu yo del futuro te lo agradecerá.
+              Agendá una llamada gratuita de 20 minutos y te ayudo a elegir el camino más claro según tu negocio y tu momento.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-8">
               <Button size="lg" asChild>
                 <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
-                  <Calendar className="mr-2 h-5 w-5" /> Agenda una Llamada Gratis
-                </a>
-              </Button>
-              <Button size="lg" variant="secondary" asChild>
-                <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="mr-2 h-5 w-5" /> Chatea por WhatsApp
+                  <Calendar className="mr-2 h-5 w-5" /> Agendar llamada
                 </a>
               </Button>
             </div>
           </div>
         </section>
+
+        {/* Contact Section */}
+        <section id="contact" className="py-20 md:py-24">
+            <div className="container text-center max-w-3xl mx-auto">
+                 <div className="flex justify-center items-center gap-6 flex-wrap">
+                    <a href="mailto:agustinasantos.tech@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
+                        <Mail className="h-5 w-5"/> agustinasantos.tech@gmail.com
+                    </a>
+                     <a href="https://wa.me/..." target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
+                        <MessageSquare className="h-5 w-5"/> WhatsApp directo
+                    </a>
+                     <a href="https://instagram.com/agus.tech" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
+                        <Instagram className="h-5 w-5"/> @agus.tech
+                    </a>
+                     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
+                        <Linkedin className="h-5 w-5"/> LinkedIn
+                    </a>
+                 </div>
+            </div>
+        </section>
+
       </main>
       <Footer />
     </div>

@@ -1,10 +1,11 @@
 import type {Metadata} from 'next';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
+import { Instagram } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Clarity Launchpad',
-  description: 'Mentoría para mujeres emprendedoras por Agustina.',
+  title: 'Agustina Santos - Comunicación y Estrategia Digital',
+  description: 'Mentorías, estrategia y páginas web para emprendedoras y negocios.',
 };
 
 export default function RootLayout({
