@@ -25,7 +25,7 @@ export default function Home() {
       <Header />
 
       {/* Top Banner */}
-      <div className="bg-primary text-primary-foreground text-center py-2 px-4 text-sm">
+      <div className="bg-secondary text-secondary-foreground text-center py-2 px-4 text-sm">
         🎁 ¡Gratis! Ebook para destrabar tu creatividad emprendedora. 
         <a href="https://agustech.gumroad.com/l/ebookcreatividad" target="_blank" rel="noopener noreferrer" className="font-bold underline ml-2">Descargalo acá</a>
       </div>
@@ -269,7 +269,7 @@ export default function Home() {
               Agendá una llamada gratuita de 20 minutos y te ayudo a elegir el camino más claro según tu negocio y tu momento.
             </p>
             <div className="mt-8">
-              <Button size="lg" asChild>
+              <Button size="lg" variant="secondary" asChild>
                 <a href="https://wa.me/542236951465?text=Hola!%20Quiero%20agendar%20una%20llamada%20gratuita%20para%20saber%20cual%20servicio%20me%20conviene%20m%C3%A1s." target="_blank" rel="noopener noreferrer">
                   <Calendar className="mr-2 h-5 w-5" /> Agendar llamada
                 </a>
