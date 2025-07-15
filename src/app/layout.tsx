@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 import { Instagram } from 'lucide-react';
+import { FloatingWhatsappButton } from '@/components/floating-whatsapp-button';
 
 export const metadata: Metadata = {
   title: 'Agustina Santos - Comunicación y Estrategia Digital',
@@ -23,6 +24,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         {children}
+        <FloatingWhatsappButton />
         <Toaster />
       </body>
     </html>
