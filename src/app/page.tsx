@@ -120,29 +120,46 @@ export default function Home() {
             </Card>
 
             {/* Consultoria */}
-            <div className="space-y-8 flex flex-col">
-              <Card className="flex flex-col flex-grow">
-                <CardHeader>
-                  <CardTitle className="text-2xl font-headline">CONSULTORÍA PARA NEGOCIos / PYMES</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6 flex-grow">
-                   <div>
-                      <h3 className="text-xl font-bold">🧠 Consultora externa en marketing digital</h3>
-                      <p className="text-muted-foreground mt-2">Servicio pensado para marcas, pymes o emprendimientos más consolidados que necesitan una mirada externa profesional, sin fórmulas vacías.</p>
-                      <p className="mt-2 font-semibold">3 etapas de trabajo:</p>
-                      <ol className="list-decimal list-inside text-muted-foreground ml-4">
-                        <li>Brief y diagnóstico del negocio</li>
-                        <li>Auditoría de redes y comunicación</li>
-                        <li>Plan estratégico + calendario de contenidos</li>
-                      </ol>
-                       <p className="text-muted-foreground mt-2">Podés sumar seguimiento mensual o usarlo como base para que lo implemente tu equipo.</p>
-                      <Button className="mt-4" asChild>
-                        <a href="https://wa.me/542236951465?text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20consultor%C3%ADa%20externa%20en%20marketing%20digital." target="_blank" rel="noopener noreferrer">👉 Ver cómo trabajamos</a>
-                      </Button>
-                   </div>
-                </CardContent>
-              </Card>
-            </div>
+             <Card className="flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-2xl font-headline">CONSULTORÍA PARA NEGOCIOS / PYMES</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6 flex-grow">
+                <div>
+                  <h3 className="text-xl font-bold">🧠 Consultora externa en marketing digital</h3>
+                  <p className="text-muted-foreground mt-2">Servicio pensado para marcas, pymes o emprendimientos más consolidados que necesitan una mirada estratégica profesional, sin fórmulas vacías.</p>
+                </div>
+                <hr />
+                <div>
+                  <h3 className="text-xl font-bold">✳️ Diagnóstico + Estrategia</h3>
+                  <p className="text-muted-foreground mt-2">Ideal si ya tenés presencia digital, pero sentís que tu comunicación no tiene dirección ni resultados.</p>
+                  <p className="mt-2 font-semibold">3 etapas de trabajo:</p>
+                  <ol className="list-decimal list-inside text-muted-foreground ml-4">
+                    <li>Brief y diagnóstico del negocio</li>
+                    <li>Auditoría de redes, web y comunicación actual</li>
+                    <li>Plan estratégico por canal con objetivos claros y hoja de ruta de implementación</li>
+                  </ol>
+                  <p className="text-muted-foreground mt-2">👉 Te llevás una guía clara para que vos o tu equipo puedan accionar con enfoque.</p>
+                  <Button className="mt-4" asChild>
+                    <a href="https://wa.me/542236951465?text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20Diagn%C3%B3stico%20%2B%20Estrategia." target="_blank" rel="noopener noreferrer">👉 Ver cómo trabajamos</a>
+                  </Button>
+                </div>
+                <hr />
+                <div>
+                  <h3 className="text-xl font-bold">✳️ Diagnóstico + Estrategia + Planificación de Contenido</h3>
+                   <p className="text-muted-foreground mt-2">Ideal si, además de la estrategia, querés saber qué comunicar y cuándo, para dejar de improvisar sin sobrecargarte.</p>
+                   <p className="font-semibold mt-2">Incluye todo lo anterior, más:</p>
+                   <ul className="list-disc list-inside text-muted-foreground ml-4">
+                    <li>Plan mensual de contenido para: Instagram</li>
+                    <li>Ideas de publicaciones para todos los canales.</li>
+                   </ul>
+                   <p className="text-muted-foreground mt-2">Una solución completa para ordenar tu presencia digital y activarla desde adentro.</p>
+                  <Button className="mt-4" asChild>
+                    <a href="https://wa.me/542236951465?text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20plan%20completo%20de%20consultor%C3%ADa." target="_blank" rel="noopener noreferrer">👉 Ver más del plan completo</a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
             
           {/* Taller para equipos */}
