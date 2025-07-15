@@ -71,7 +71,7 @@ export default function Home() {
         </section>
 
         {/* About Me Section */}
-        <section id="about" className="bg-accent py-20 md:py-24">
+        <section id="about" className="bg-accent py-20 md:py-24 text-primary-foreground">
           <div className="container grid md:grid-cols-2 gap-12 items-center">
             <Image
               src="https://i.imgur.com/Oe3EIBL.jpeg"
@@ -83,10 +83,10 @@ export default function Home() {
             />
             <div className="space-y-4">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">Soy Agustina Santos. Analizo, ordeno y acciono.</h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-primary-foreground/80">
                 Trabajo con emprendedores y marcas que necesitan claridad, estructura y una estrategia realista que puedan sostener.
               </p>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-primary-foreground/80">
                 Mentora, analista y diseñadora web. Lo mío es bajarte todo a tierra.
               </p>
             </div>
@@ -212,7 +212,7 @@ export default function Home() {
         </section>
         
         {/* Free Resources Section */}
-        <section id="free-resources" className="bg-accent py-20 md:py-24">
+        <section id="free-resources" className="bg-accent py-20 md:py-24 text-primary-foreground">
             <div className="container">
                 <div className="text-center max-w-3xl mx-auto">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">
@@ -220,7 +220,7 @@ export default function Home() {
                     </h2>
                 </div>
                 <div className="mt-12 grid md:grid-cols-2 gap-8">
-                    <Card>
+                    <Card className="bg-card text-card-foreground">
                         <CardHeader>
                             <CardTitle className="text-xl font-headline">📘 Ebook – Activá tu creatividad emprendedora</CardTitle>
                         </CardHeader>
@@ -235,7 +235,7 @@ export default function Home() {
                             </Button>
                         </CardContent>
                     </Card>
-                    <Card>
+                    <Card className="bg-card text-card-foreground">
                         <CardHeader>
                             <CardTitle className="text-xl font-headline">🎥 Clase gratuita – Creá tu Linktree paso a paso</CardTitle>
                         </CardHeader>
@@ -281,11 +281,11 @@ export default function Home() {
 
         {/* Final CTA Section */}
         <section className="bg-accent py-20 md:py-24">
-          <div className="container text-center max-w-3xl mx-auto">
+          <div className="container text-center max-w-3xl mx-auto text-primary-foreground">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               ¿No sabés por dónde empezar?
             </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
+            <p className="mt-4 text-lg text-primary-foreground/80">
               Agendá una llamada gratuita de 20 minutos y te ayudo a elegir el camino más claro según tu negocio y tu momento.
             </p>
             <div className="mt-8">
