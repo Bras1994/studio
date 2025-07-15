@@ -18,7 +18,7 @@ export function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-2">
           <Button asChild>
-            <Link href="/cta-generator">Generador de CTA</Link>
+            <a href="https://wa.me/+542236951465?text=Hola!%20Quiero%20agendar%20una%20llamada%20gratuita%20para%20saber%20cual%20servicio%20me%20conviene%20m%C3%A1s." target="_blank" rel="noopener noreferrer">Agendar una llamada</a>
           </Button>
         </div>
       </div>
