@@ -17,7 +17,7 @@ export default function Home() {
         <a href="https://agustech.gumroad.com/l/ebookcreatividad" target="_blank" rel="noopener noreferrer" className="font-bold underline ml-2">Descargalo acá</a>
       </div>
 
-      <main className="flex-1">
+      <main className="flex-1 pb-16">
         {/* Hero Section */}
         <section className="container grid lg:grid-cols-2 gap-10 items-center py-20 md:py-32">
           <div className="space-y-6">
@@ -128,6 +128,7 @@ export default function Home() {
                 <div>
                   <h3 className="text-xl font-bold">🧠 Consultora externa en marketing digital</h3>
                   <p className="text-muted-foreground mt-2">Servicio pensado para marcas, pymes o emprendimientos más consolidados que necesitan una mirada estratégica profesional, sin fórmulas vacías.</p>
+                  <p className="text-muted-foreground mt-2">Contás con dos propuestas posibles, según el nivel de profundidad y acompañamiento que estés buscando</p>
                 </div>
                 <hr />
                 <div>
