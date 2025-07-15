@@ -18,7 +18,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Lato', 'sans-serif'],
-        headline: ['Pirata One', 'serif'],
+        headline: ['Anton', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
