@@ -17,7 +17,7 @@ export default function Home() {
         <a href="https://agustech.gumroad.com/l/ebookcreatividad" target="_blank" rel="noopener noreferrer" className="font-bold underline ml-2">Descargalo acá</a>
       </div>
 
-      <main className="flex-1 pb-16">
+      <main className="flex-1">
         {/* Hero Section */}
         <section className="container grid lg:grid-cols-2 gap-10 items-center py-20 md:py-32">
           <div className="space-y-6">
