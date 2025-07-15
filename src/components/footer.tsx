@@ -12,7 +12,7 @@ export function Footer() {
             <a href="mailto:agustinasantos.tech@gmail.com" aria-label="Email" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Mail className="h-5 w-5" />
             </a>
-            <a href="https://wa.me/..." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="https://api.whatsapp.com/send/?phone=2236951465&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="text-muted-foreground hover:text-foreground transition-colors">
                 <MessageSquare className="h-5 w-5" />
             </a>
             <a href="https://instagram.com/agus.tech" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground hover:text-foreground transition-colors">

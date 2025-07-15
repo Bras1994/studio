@@ -27,7 +27,7 @@ export default function Home() {
       {/* Top Banner */}
       <div className="bg-primary text-primary-foreground text-center py-2 px-4 text-sm">
         🎁 ¡Gratis! Ebook para destrabar tu creatividad emprendedora. 
-        <a href="#" className="font-bold underline ml-2">Descargalo acá</a>
+        <a href="https://agustech.gumroad.com/l/ebookcreatividad" target="_blank" rel="noopener noreferrer" className="font-bold underline ml-2">Descargalo acá</a>
       </div>
 
       <main className="flex-1">
@@ -228,7 +228,7 @@ export default function Home() {
                             <p className="text-muted-foreground">Una guía práctica para dejar de sentirte bloqueada, destrabar ideas y volver a conectar con tu contenido.</p>
                             <p className="text-foreground">💡 Ideal si estás empezando o perdiste el entusiasmo.</p>
                             <Button asChild>
-                                <a href="#">
+                                <a href="https://agustech.gumroad.com/l/ebookcreatividad" target="_blank" rel="noopener noreferrer">
                                     <Download className="mr-2 h-4 w-4" />
                                     Descargalo gratis
                                 </a>
@@ -243,7 +243,7 @@ export default function Home() {
                             <p className="text-muted-foreground">Una guía simple para tener tu perfil más profesional, sin depender de nadie.</p>
                             <p className="text-foreground">🌱 Ideal para emprendedoras que están empezando a ordenarse digitalmente.</p>
                             <Button asChild>
-                                <a href="#">
+                                <a href="https://agustech.systeme.io/clase-gratis" target="_blank" rel="noopener noreferrer">
                                     <PlayCircle className="mr-2 h-4 w-4" />
                                     Accedé a la clase
                                 </a>
@@ -290,7 +290,7 @@ export default function Home() {
             </p>
             <div className="mt-8">
               <Button size="lg" asChild>
-                <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/+542236951465?text=Hola!%20Quiero%20agendar%20una%20llamada%20gratuita%20para%20saber%20cual%20servicio%20me%20conviene%20m%C3%A1s." target="_blank" rel="noopener noreferrer">
                   <Calendar className="mr-2 h-5 w-5" /> Agendar llamada
                 </a>
               </Button>
@@ -305,7 +305,7 @@ export default function Home() {
                     <a href="mailto:agustinasantos.tech@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
                         <Mail className="h-5 w-5"/> agustinasantos.tech@gmail.com
                     </a>
-                     <a href="https://wa.me/..." target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
+                     <a href="https://api.whatsapp.com/send/?phone=2236951465&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
                         <MessageSquare className="h-5 w-5"/> WhatsApp directo
                     </a>
                      <a href="https://instagram.com/agus.tech" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
