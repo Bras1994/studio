@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, User, Building, Globe, Mail, MessageSquare, Linkedin, Calendar, Download, PlayCircle, Instagram } from "lucide-react";
+import { Check, User, Building, Globe, Mail, MessageSquare, Linkedin, Calendar, Download, PlayCircle, Instagram, ArrowDown } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
@@ -40,22 +40,12 @@ export default function Home() {
             <p className="text-lg md:text-xl text-muted-foreground">
               Mentorías, estrategia y páginas web para emprendedoras y negocios que quieren crecer en digital, bajado a tierra y con acompañamiento real.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" asChild>
-                <a href="#services">
-                  <User className="mr-2 h-5 w-5" /> 👩‍💻 Quiero una mentoría
-                </a>
-              </Button>
-              <Button size="lg" variant="secondary" asChild>
-                <a href="#services">
-                  <Building className="mr-2 h-5 w-5" /> 🏢 Necesito estrategia para mi negocio
-                </a>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a href="#services">
-                  <Globe className="mr-2 h-5 w-5" /> 🌐 Estoy buscando una web
-                </a>
-              </Button>
+            <div className="flex gap-4">
+                <Button size="lg" asChild>
+                    <a href="#services">
+                        Así te puedo ayudar <ArrowDown className="ml-2 h-5 w-5" />
+                    </a>
+                </Button>
             </div>
           </div>
           <div className="relative hidden lg:block">
@@ -74,7 +64,7 @@ export default function Home() {
         <section id="about" className="bg-accent py-20 md:py-24 text-primary-foreground">
           <div className="container grid md:grid-cols-2 gap-12 items-center">
             <Image
-              src="https://i.imgur.com/Oe3EIBL.jpeg"
+              src="https://i.imgur.com/2todKOR.png"
               alt="Agustina Santos"
               width={500}
               height={500}
