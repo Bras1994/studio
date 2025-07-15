@@ -25,7 +25,7 @@ export default function Home() {
               Profesionalizá tu comunicación digital sin volverte loca.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
-              Mentorías, estrategia y páginas web para emprendedoras y negocios que quieren crecer en digital, bajado a tierra y con acompañamiento real.
+              Mentoría y consultoría para marcas, emprendedoras y equipos que quieren dejar de improvisar y empezar a comunicar con intención.
             </p>
             <div className="flex gap-4">
                 <Button size="lg" asChild>
@@ -61,10 +61,13 @@ export default function Home() {
             <div className="space-y-4">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">Soy Agustina Santos. Analizo, ordeno y acciono.</h2>
               <p className="text-lg text-[#EDEDED]/80">
-                Trabajo con emprendedores y marcas que necesitan claridad, estructura y una estrategia realista que puedan sostener.
+                Trabajo con emprendedoras y negocios a ordenar su comunicación, definir su estrategia y construir una presencia digital coherente, auténtica y realista.
               </p>
               <p className="text-lg text-[#EDEDED]/80">
-                Mentora, analista y diseñadora web. Lo mío es bajarte todo a tierra.
+                Trabajo con foco, herramientas simples y un enfoque que baja a tierra todo lo que parece caótico, sin fórmulas vacías ni presión.
+              </p>
+              <p className="text-lg text-[#EDEDED]/80">
+                Si estás buscando acompañamiento para organizar tu comunicación, profesionalizar tu presencia online o alinear a tu equipo con la identidad de tu marca, acá estoy para ayudarte.
               </p>
             </div>
           </div>
@@ -106,8 +109,8 @@ export default function Home() {
                     <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Análisis de tu perfil actual</li>
                     <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Marca personal y público objetivo</li>
                     <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Estrategia de contenido</li>
-                    <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Edición simple (Canva y CapCut)</li>
-                    <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Opcional: Web o tienda online</li>
+                    <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Creá contenido visual que te represente</li>
+                    <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Incluye la creación de tu página web</li>
                   </ul>
                    <Button className="mt-4" asChild>
                     <a href="https://wa.me/542236951465?text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20mentor%C3%ADa%20extendida%20%E2%80%9CBotiqu%C3%ADn%20de%20Marketing%E2%80%9D." target="_blank" rel="noopener noreferrer">👉 Más info del botiquín</a>
