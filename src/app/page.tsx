@@ -59,7 +59,7 @@ export default function Home() {
               data-ai-hint="professional woman portrait"
             />
             <div className="space-y-4">
-              <h2 className="font-headline text-3xl md:text-4xl font-bold text-[#EDEDED]">Soy Agustina Santos. Analizo, ordeno y acciono.</h2>
+              <h2 className="font-headline text-3xl md:text-4xl font-bold">Soy Agustina Santos. Analizo, ordeno y acciono.</h2>
               <p className="text-lg text-[#EDEDED]/80">
                 Trabajo con emprendedores y marcas que necesitan claridad, estructura y una estrategia realista que puedan sostener.
               </p>
@@ -120,7 +120,7 @@ export default function Home() {
             <div className="space-y-8 flex flex-col">
               <Card className="flex flex-col flex-grow">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-headline">CONSULTORÍA PARA NEGOCIOS / PYMES</CardTitle>
+                  <CardTitle className="text-2xl font-headline">CONSULTORÍA PARA NEGOCIos / PYMES</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6 flex-grow">
                    <div>
@@ -182,7 +182,7 @@ export default function Home() {
         <section id="free-resources" className="bg-primary py-20 md:py-24 text-primary-foreground">
             <div className="container">
                 <div className="text-center max-w-3xl mx-auto">
-                    <h2 className="font-headline text-3xl md:text-4xl font-bold text-[#EDEDED]">
+                    <h2 className="font-headline text-3xl md:text-4xl font-bold">
                         🎁 Recursos Gratuitos
                     </h2>
                 </div>
@@ -222,9 +222,9 @@ export default function Home() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="bg-primary py-20 md:py-24">
+        <section id="final-cta" className="bg-primary py-20 md:py-24">
           <div className="container text-center max-w-3xl mx-auto text-primary-foreground">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-[#EDEDED]">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">
               ¿No sabés por dónde empezar?
             </h2>
             <p className="mt-4 text-lg text-[#EDEDED]/80">
