@@ -74,7 +74,7 @@ export default function Home() {
         <section id="about" className="bg-accent py-20 md:py-24 text-primary-foreground">
           <div className="container grid md:grid-cols-2 gap-12 items-center">
             <Image
-              src="https://i.imgur.com/Oe3EIBL.jpeg"
+              src="https://i.imgur.com/2todKOR.png"
               alt="Agustina Santos"
               width={500}
               height={500}
@@ -82,11 +82,11 @@ export default function Home() {
               data-ai-hint="professional woman portrait"
             />
             <div className="space-y-4">
-              <h2 className="font-headline text-3xl md:text-4xl font-bold">Soy Agustina Santos. Analizo, ordeno y acciono.</h2>
-              <p className="text-lg text-primary-foreground/80">
+              <h2 className="font-headline text-3xl md:text-4xl font-bold text-[#EDEDED]">Soy Agustina Santos. Analizo, ordeno y acciono.</h2>
+              <p className="text-lg text-[#EDEDED]/80">
                 Trabajo con emprendedores y marcas que necesitan claridad, estructura y una estrategia realista que puedan sostener.
               </p>
-              <p className="text-lg text-primary-foreground/80">
+              <p className="text-lg text-[#EDEDED]/80">
                 Mentora, analista y diseñadora web. Lo mío es bajarte todo a tierra.
               </p>
             </div>
@@ -122,6 +122,7 @@ export default function Home() {
                 <div>
                   <h3 className="text-xl font-bold">🧰 “Botiquín de Marketing” – Mentoría extendida</h3>
                   <p className="text-muted-foreground mt-2">Acompañamiento de 6 semanas para ayudarte a construir (o reconstruir) tu presencia digital desde la base: identidad, comunicación, contenido, herramientas.</p>
+                  <p className="font-semibold mt-2">Incluye:</p>
                   <ul className="list-none space-y-1 mt-2 text-muted-foreground">
                     <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Análisis de tu perfil actual</li>
                     <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Marca personal y público objetivo</li>
@@ -215,7 +216,7 @@ export default function Home() {
         <section id="free-resources" className="bg-accent py-20 md:py-24 text-primary-foreground">
             <div className="container">
                 <div className="text-center max-w-3xl mx-auto">
-                    <h2 className="font-headline text-3xl md:text-4xl font-bold">
+                    <h2 className="font-headline text-3xl md:text-4xl font-bold text-[#EDEDED]">
                         🎁 Recursos Gratuitos
                     </h2>
                 </div>
@@ -282,10 +283,10 @@ export default function Home() {
         {/* Final CTA Section */}
         <section className="bg-accent py-20 md:py-24">
           <div className="container text-center max-w-3xl mx-auto text-primary-foreground">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold text-[#EDEDED]">
               ¿No sabés por dónde empezar?
             </h2>
-            <p className="mt-4 text-lg text-primary-foreground/80">
+            <p className="mt-4 text-lg text-[#EDEDED]/80">
               Agendá una llamada gratuita de 20 minutos y te ayudo a elegir el camino más claro según tu negocio y tu momento.
             </p>
             <div className="mt-8">
@@ -323,3 +324,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
