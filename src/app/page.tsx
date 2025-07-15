@@ -6,19 +6,6 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
 
-const testimonials = [
-  {
-    quote: "Agus me ayudó a organizar toda mi comunicación, ¡hoy siento que sé lo que hago en redes!",
-    name: "Cecilia Oreglia",
-    title: ""
-  },
-  {
-    quote: "No solo me hizo la web, sino que me acompañó para entender cómo usarla y cómo comunicar mejor.",
-    name: "TuttoLimpio",
-    title: ""
-  },
-];
-
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -232,31 +219,6 @@ export default function Home() {
                     </Card>
                 </div>
             </div>
-        </section>
-
-
-        {/* Testimonials Section */}
-        <section className="container py-20 md:py-24">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">
-              Testimonios
-            </h2>
-          </div>
-          <div className="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-                <Card key={index} className="h-full">
-                    <CardContent className="p-6 flex flex-col justify-center items-center text-center h-full">
-                    <p className="text-muted-foreground text-lg">"{testimonial.quote}"</p>
-                    <div className="mt-4">
-                        <p className="font-bold font-headline text-foreground">– {testimonial.name}</p>
-                    </div>
-                    </CardContent>
-                </Card>
-            ))}
-          </div>
-           <div className="text-center mt-8">
-             <Button variant="link" asChild><a href="https://www.instagram.com/stories/highlights/18007670308528511/" target="_blank" rel="noopener noreferrer">Ver más testimonios</a></Button>
-           </div>
         </section>
 
         {/* Final CTA Section */}
