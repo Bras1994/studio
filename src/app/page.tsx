@@ -74,7 +74,7 @@ export default function Home() {
         <section id="about" className="bg-accent py-20 md:py-24 text-primary-foreground">
           <div className="container grid md:grid-cols-2 gap-12 items-center">
             <Image
-              src="https://i.imgur.com/2todKOR.png"
+              src="https://i.imgur.com/Oe3EIBL.jpeg"
               alt="Agustina Santos"
               width={500}
               height={500}
@@ -116,7 +116,9 @@ export default function Home() {
                     <li>Sentís que hacés de todo pero sin estrategia</li>
                     <li>Estás trabada para dar el siguiente paso</li>
                   </ul>
-                  <Button className="mt-4" asChild><a href="#">👉 Quiero una mentoría</a></Button>
+                  <Button className="mt-4" asChild>
+                    <a href="https://wa.me/542236951465?text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20mentor%C3%ADa%20express%20%E2%80%9CBajado%20a%20Tierra%E2%80%9D." target="_blank" rel="noopener noreferrer">👉 Quiero una mentoría</a>
+                  </Button>
                 </div>
                 <hr/>
                 <div>
@@ -130,7 +132,9 @@ export default function Home() {
                     <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Edición simple (Canva y CapCut)</li>
                     <li className="flex items-center"><Check className="h-4 w-4 mr-2 text-primary"/>Opcional: Web o tienda online</li>
                   </ul>
-                   <Button className="mt-4" asChild><a href="#">👉 Más info del botiquín</a></Button>
+                   <Button className="mt-4" asChild>
+                    <a href="https://wa.me/542236951465?text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20mentor%C3%ADa%20extendida%20%E2%80%9CBotiqu%C3%ADn%20de%20Marketing%E2%80%9D." target="_blank" rel="noopener noreferrer">👉 Más info del botiquín</a>
+                   </Button>
                 </div>
               </CardContent>
             </Card>
@@ -152,7 +156,9 @@ export default function Home() {
                         <li>Plan estratégico + calendario de contenidos</li>
                       </ol>
                        <p className="text-muted-foreground mt-2">Podés sumar seguimiento mensual o usarlo como base para que lo implemente tu equipo.</p>
-                      <Button className="mt-4" asChild><a href="#">👉 Ver cómo trabajamos</a></Button>
+                      <Button className="mt-4" asChild>
+                        <a href="https://wa.me/542236951465?text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20consultor%C3%ADa%20externa%20en%20marketing%20digital." target="_blank" rel="noopener noreferrer">👉 Ver cómo trabajamos</a>
+                      </Button>
                    </div>
                 </CardContent>
               </Card>
@@ -171,7 +177,9 @@ export default function Home() {
                       <li>Diseño responsive + autogestionable</li>
                       <li>Opcional: mantenimiento mensual</li>
                     </ul>
-                    <Button className="mt-4" asChild><a href="#">👉 Quiero una web</a></Button>
+                    <Button className="mt-4" asChild>
+                      <a href="https://wa.me/542236951465?text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20dise%C3%B1o%20web." target="_blank" rel="noopener noreferrer">👉 Quiero una web</a>
+                    </Button>
                     <p className="text-sm text-muted-foreground italic pt-2">PD: Esta web que estás viendo también la hice yo 😌</p>
                 </CardContent>
               </Card>
@@ -206,7 +214,9 @@ export default function Home() {
                             </ul>
                         </div>
                     </div>
-                    <Button className="mt-4" asChild><a href="#">👉 Quiero este taller para mi equipo</a></Button>
+                    <Button className="mt-4" asChild>
+                      <a href="https://wa.me/542236951465?text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20taller%20para%20equipos%20%E2%80%9CMarca%20personal%20con%20prop%C3%B3sito%E2%80%9D." target="_blank" rel="noopener noreferrer">👉 Quiero este taller para mi equipo</a>
+                    </Button>
                 </CardContent>
             </Card>
           </div>
@@ -276,7 +286,7 @@ export default function Home() {
             ))}
           </div>
            <div className="text-center mt-8">
-             <Button variant="link" asChild><a href="#">Ver más testimonios</a></Button>
+             <Button variant="link" asChild><a href="https://www.instagram.com/stories/highlights/18007670308528511/" target="_blank" rel="noopener noreferrer">Ver más testimonios</a></Button>
            </div>
         </section>
 
@@ -291,7 +301,7 @@ export default function Home() {
             </p>
             <div className="mt-8">
               <Button size="lg" asChild>
-                <a href="https://wa.me/+542236951465?text=Hola!%20Quiero%20agendar%20una%20llamada%20gratuita%20para%20saber%20cual%20servicio%20me%20conviene%20m%C3%A1s." target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/542236951465?text=Hola!%20Quiero%20agendar%20una%20llamada%20gratuita%20para%20saber%20cual%20servicio%20me%20conviene%20m%C3%A1s." target="_blank" rel="noopener noreferrer">
                   <Calendar className="mr-2 h-5 w-5" /> Agendar llamada
                 </a>
               </Button>
@@ -306,13 +316,13 @@ export default function Home() {
                     <a href="mailto:agustinasantos.tech@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
                         <Mail className="h-5 w-5"/> agustinasantos.tech@gmail.com
                     </a>
-                     <a href="https://api.whatsapp.com/send/?phone=2236951465&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
+                     <a href="https://wa.me/542236951465" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
                         <MessageSquare className="h-5 w-5"/> WhatsApp directo
                     </a>
                      <a href="https://instagram.com/agus.tech" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
                         <Instagram className="h-5 w-5"/> @agus.tech
                     </a>
-                     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
+                     <a href="https://www.linkedin.com/in/santosagustina/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
                         <Linkedin className="h-5 w-5"/> LinkedIn
                     </a>
                  </div>
@@ -324,5 +334,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
